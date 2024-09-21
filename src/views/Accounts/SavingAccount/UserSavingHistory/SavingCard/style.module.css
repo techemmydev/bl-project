@@ -1,0 +1,177 @@
+.loanHistoryContainer {
+  /* background-color: brown; */
+  margin-top: 60px;
+  padding: 30px;
+}
+.userIndicator {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  /* background-color: aqua; */
+  width: 500px;
+  height: 121px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #e2e9e2;
+  opacity: 0px;
+}
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.user p {
+  margin-top: 10px;
+}
+.userEditimage {
+  align-self: flex-start;
+}
+.Transaction_box {
+  width: 600px;
+  /* height: 400px; */
+  top: 257px;
+  left: 314px;
+  gap: 455px;
+  border-radius: 21px;
+  background: #ebfaeb;
+  padding: 20px;
+}
+.Transaction_box h1,
+p,
+h4 {
+  color: #999999;
+  font-weight: 600;
+  font-size: 11px;
+}
+.transactions td {
+  font-size: 11px;
+  color: #999999;
+  font-weight: 600;
+  border: none;
+}
+.transactions th {
+  font-size: 11px;
+  font-weight: 500;
+  color: #5e605e;
+}
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.inner h1 {
+  font-size: 15px;
+  font-weight: 600;
+}
+.header {
+  /* background-color: orangered; */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.transactions {
+  padding: 10px;
+}
+.main_container {
+  background-color: white;
+
+  border-radius: 9px;
+  border: 1px solid #e5e5e5;
+  padding: 15px;
+}
+.main_container h6 {
+  font-size: 13px;
+  margin-right: 25px;
+  text-align: end;
+}
+.imageContainer {
+  position: relative;
+  display: inline-block;
+  bottom: 5px;
+}
+
+.icons {
+  margin-right: 8px; /* Adjust spacing between icon and name */
+}
+
+.buttonContainer button {
+  border: none !important;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+/* Media Query for screen widths 760px and below */
+@media (max-width: 760px) {
+  /* Make the loan history container full width */
+  .loanHistoryContainer {
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  /* Stack elements vertically */
+  .userIndicator {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .user {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Transaction_box {
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+  }
+
+  .inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .transactions table {
+    width: 100%;
+    overflow-x: auto;
+    /* display: block; */
+  }
+
+  /* Adjust table font size for better readability */
+  .transactions td,
+  .transactions th {
+    font-size: 8px;
+  }
+
+  /* Make buttons stack vertically with increased space */
+  .buttonContainer {
+    gap: 10px;
+  }
+
+  .buttonContainer button {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  /* Adjust the font size of texts for smaller screens */
+  .Transaction_box h1,
+  p,
+  h4 {
+    font-size: 12px;
+  }
+
+  .main_container h6 {
+    font-size: 11px;
+  }
+}

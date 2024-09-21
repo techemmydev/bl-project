@@ -1,0 +1,130 @@
+.transactions {
+  padding: 15px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  color: #999999;
+}
+
+.table th {
+  background-color: white; /* Header background color */
+  color: #5e605e; /* Header text color */
+}
+
+.table tr:nth-child(even) {
+  background-color: #ffffff; /* Odd row background color */
+}
+
+.table tr:nth-child(odd) {
+  background: #ddf4ff;
+}
+.table span {
+  margin-right: 10px;
+}
+.userIndicator {
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  /* background-color: aqua; */
+  width: 500px;
+  height: 121px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #e2e9e2;
+  opacity: 0px;
+}
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.user p {
+  margin-top: 10px;
+}
+.userEditimage {
+  align-self: flex-start;
+}
+
+.totals {
+  margin-top: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #ddf4ff;
+  padding: 10px;
+}
+.totals_box {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-right: 50px;
+}
+.totals p {
+  margin: 5px 0;
+  color: black;
+  font-weight: 600;
+}
+@media (max-width: 760px) {
+  /* Adjust table styling on mobile */
+  .tableWrapper {
+    overflow-x: auto; /* Enable horizontal scroll for table */
+  }
+
+  .table th,
+  .table td {
+    font-size: 7px; /* Reduce text size for better fit */
+    padding: 6px; /* Reduce padding */
+    text-align: center;
+  }
+
+  /* Adjust userIndicator section for mobile */
+  .userIndicator {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Allow height to adjust automatically */
+    margin-left: unset;
+    margin-top: 90px;
+  }
+
+  /* Stack user info vertically */
+  .user {
+    align-items: flex-start;
+  }
+
+  /* Hide totals section on mobile */
+
+  /* Alternative totals display for mobile */
+  .totals_box {
+    background-color: #ddf4ff;
+    gap: unset;
+    justify-content: center;
+    margin-right: unset;
+    font-size: 6px;
+  }
+
+  .totals_box p {
+    color: black;
+    font-weight: 600;
+    font-size: 10px;
+  }
+  .transactions {
+    padding: unset;
+  }
+  .icons {
+    width: 20px;
+  }
+}

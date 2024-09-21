@@ -1,0 +1,38 @@
+.userStatus {
+  display: flex;
+  align-items: center;
+}
+
+.avatarWrapper {
+  position: relative;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.activeIndicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.inactiveIndicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: red; /* Inactive users show red */
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.userName {
+  margin-left: 10px;
+}

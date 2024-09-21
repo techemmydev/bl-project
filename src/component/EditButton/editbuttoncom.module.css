@@ -1,0 +1,17 @@
+.bbb {
+  width: 65px;
+  color: #b3b3b3;
+  font-weight: 500;
+  height: 25px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+/* .bbb:hover {
+  background-color: red;
+} */

@@ -1,0 +1,59 @@
+.fiter_icons {
+  width: 36px;
+  height: 38px;
+  text-align: center;
+  padding: 5px 4px 5px 4px;
+  color: #b4b4b4;
+  border-radius: 4px;
+  border: 1px solid #ffffff99;
+  opacity: 0px;
+  background-color: white;
+  box-shadow: 0px 20px 40px 0px #00000033;
+}
+.AddnewButton {
+  width: 149px;
+  height: 46px;
+  border-radius: 10px;
+  padding: 0px, 0px, 0px, 2px;
+  background-color: #53cafd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 11px;
+  color: white;
+  font-weight: 600;
+}
+.AddnewButton:hover {
+  background-color: #03b1fc;
+}
+.notification_bg {
+  background-color: white;
+  width: 149px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 5px 3px 9px;
+  box-shadow: 0px 20px 40px 0px #00000033;
+  border-radius: 4px;
+  border: 1px solid #ffffff99;
+}
+.user_name {
+  color: #b4b4b4;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 11px;
+}
+@media screen and (max-width: 760px) {
+  .notification_bg,
+  .fiter_icons {
+    display: none;
+  }
+  .AddnewButton {
+    font-size: 9px;
+  }
+  .AddnewButton {
+    margin-top: 30px;
+  }
+}

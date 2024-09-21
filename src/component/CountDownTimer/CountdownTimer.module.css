@@ -1,0 +1,62 @@
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.timeBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6a34f; /* Use the orange color */
+  border-radius: 8px;
+  padding: 10px;
+  width: 58px;
+  gap: 20px;
+  height: 50px;
+}
+
+.time {
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  font-family: "Share Tech", sans-serif;
+}
+
+.label {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: black;
+  margin-top: 5px;
+  font-family: "Share Tech", sans-serif;
+}
+
+.timeBox:not(:last-child) {
+  position: relative;
+  padding-right: 20px;
+}
+
+.timeBox:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 4px;
+  background-color: #094a54;
+  border-radius: 2px;
+}
+
+.timeBox:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #46878f;
+  border-radius: 50%;
+}

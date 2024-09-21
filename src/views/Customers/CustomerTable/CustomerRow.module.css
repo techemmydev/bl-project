@@ -1,0 +1,77 @@
+.theadfontsize th {
+  font-size: 10px;
+  text-align: center;
+  color: #4a4a4a;
+  font-weight: 600;
+  padding: 10px;
+}
+.theadfontsize th,
+.tabel_row td {
+  text-align: center; /* Center-aligns the text within table cells */
+  vertical-align: middle; /* Aligns content vertically in the middle */
+  padding: 10px; /* Adds consistent padding */
+}
+
+.tabel_row td {
+  font-size: 10px;
+  cursor: pointer;
+  color: #4a4a4a;
+  font-weight: 600;
+  text-align: center;
+}
+.icons {
+  width: 30px;
+}
+.tabel_row td:hover {
+  color: #007bff;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AddnewButton {
+  width: 140px;
+  height: 46px;
+  border-radius: 10px;
+  padding: 0px, 0px, 0px, 2px;
+  background-color: #53cafd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 11px;
+  color: white;
+  font-weight: 600;
+}
+.AddnewButton:hover {
+  background-color: #03b1fc;
+}
+/* Media Query for mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Ensure the container can scroll horizontally if needed */
+  .stafftablecontainer {
+    margin-top: 80px;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    width: 100%;
+  }
+
+  /* Adjust font size and padding for mobile */
+  .theadfontsize th,
+  .tabel_row td {
+    font-size: 5px; /* Smaller font size for mobile */
+    padding: 1px; /* Reduce padding to fit content better */
+  }
+
+  /* Prevent table content from wrapping and enable ellipsis for overflow */
+  .tabel_row td {
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflow content */
+    text-overflow: ellipsis; /* Add ellipsis (...) for long text */
+  }
+  .AddnewButton {
+    font-size: 9px;
+  }
+}

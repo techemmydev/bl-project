@@ -1,0 +1,111 @@
+.formbox {
+  width: 50%;
+  margin: auto;
+}
+.addbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inputWidth {
+  border-radius: 10px;
+  font-size: 11px;
+  height: 44px;
+  background-color: white;
+}
+.formSelct {
+  height: 44px;
+  font-size: 11px;
+}
+.inputWidth::placeholder {
+  font-size: 10px;
+}
+.formLabel {
+  font-size: 12px;
+  color: black;
+}
+.drop {
+  font-size: 12px;
+  height: 44px;
+}
+.mybutton1 {
+  width: 140px;
+  height: 46px;
+  border-radius: 38px;
+  padding: 0px, 0px, 0px, 2px;
+  background-color: #5bd75b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 11px;
+  color: white;
+  font-weight: 600;
+}
+.mybutton2 {
+  width: 140px;
+  height: 46px;
+  border-radius: 38px;
+  padding: 0px, 0px, 0px, 2px;
+  background-color: #16c28f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 11px;
+  color: white;
+  font-weight: 600;
+}
+.mybutton3 {
+  width: 140px;
+  height: 46px;
+  border: 1px solid #999999;
+  border-radius: 38px;
+  padding: 0px, 0px, 0px, 2px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 11px;
+  color: #999999;
+  font-weight: 600;
+}
+@media (max-width: 760px) {
+  .formbox {
+    width: 100%;
+  }
+
+  /* Make the form container full width */
+  form {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Ensure the input fields remain two side-by-side */
+  .inputWidth,
+  .formSelct,
+  .drop {
+    font-size: 12px;
+  }
+
+  .formLabel {
+    font-size: 14px;
+  }
+
+  /* Adjust the font size slightly for better readability */
+  .inputWidth::placeholder {
+    font-size: 11px;
+  }
+
+  /* Stack buttons vertically and increase spacing */
+  .mybutton1,
+  .mybutton2,
+  .mybutton3 {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 44px;
+    font-size: 9px;
+    border-radius: 15px;
+  }
+}

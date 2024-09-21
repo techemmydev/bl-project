@@ -1,0 +1,174 @@
+.navbar_icon {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1001;
+}
+/* Close Icon */
+.MdClosebutton {
+  position: fixed; /* Ensure the close button stays in a fixed position */
+  top: 20px; /* Adjust to fit within your layout */
+  left: 20px; /* Position it where you want it to appear */
+  z-index: 1200; /* Ensure it's higher than the sidebar's z-index */
+  font-size: 25px; /* Adjust size */
+  color: #4a4a4a; /* Adjust color */
+  display: none;
+}
+.sidebar {
+  width: 255px;
+  height: 100vh;
+  border-radius: 0px 90px 0px 0px;
+  left: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  background-color: #effbef;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.navigationLink {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 20px;
+}
+
+.logowrap {
+  margin-bottom: 25px;
+}
+
+.logoimgae {
+  width: 120px;
+}
+
+.navItem {
+  list-style: none;
+  font-family: var(--font-Family--);
+  font-size: 12px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.navItem a:hover {
+  color: black;
+}
+.navLink {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  color: #999999;
+  font-weight: 500;
+}
+
+.navItem.active {
+  background-color: #f4fcd9;
+}
+
+.navItem.active.navLink {
+  color: #999999;
+  font-weight: 600;
+}
+
+.Sidebaricons {
+  width: 20px;
+  height: 20px;
+}
+.bottomSection {
+  display: none;
+  width: 100%;
+
+  margin-top: auto; /* Push to bottom of sidebar */
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.bottomNavItem {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  color: #999;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.bottomNavItem .icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.bottomNavItem:hover {
+  color: black;
+}
+
+.profile {
+  color: #00aaff;
+}
+
+.logout {
+  color: #ff4d4d;
+}
+@media screen and (max-width: 760px) {
+  .navbar_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4a4a4a;
+    background-color: #effbef;
+    border-radius: 41px;
+    width: 44px;
+    height: 43px;
+    font-size: 25px;
+    position: fixed;
+    top: 20px;
+    left: 10%;
+    transform: translateX(-50%);
+    z-index: 1001;
+  }
+  .MdClosebutton {
+    position: fixed;
+    top: 30px; /* Adjusted to the top */
+    left: 160px; /* Adjusted to the left */
+    z-index: 100; /* Ensure it's above the sidebar */
+    font-size: 25px;
+    color: #4a4a4a;
+    display: block;
+  }
+  /* Sidebar Mobile */
+  .sidebar {
+    transform: translateX(-100%);
+    background-color: #effbef;
+    padding: 20px;
+    position: fixed;
+    z-index: 1100; /* Sidebar z-index */
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .navigationLink {
+    margin-top: 20%;
+  }
+
+  .navigationLink .navItem {
+    flex-direction: column;
+    align-items: start;
+  }
+  .bottomSection {
+    display: flex;
+    flex-direction: column;
+  }
+}

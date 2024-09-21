@@ -1,0 +1,119 @@
+.myButton.isTrue {
+  border-bottom: 2px solid #007bff; /* Adjust color and thickness as needed */
+  color: #007bff;
+  font-weight: 600;
+}
+.isFalse {
+  color: #4a4a4a;
+  font-weight: 600;
+}
+.myButton {
+  border: unset;
+
+  background-color: unset;
+  font-size: 11px;
+}
+.theadfontsize th,
+.tabel_row td {
+  text-align: center; /* Center-aligns the text within table cells */
+  vertical-align: middle; /* Aligns content vertically in the middle */
+  padding: 10px; /* Adds consistent padding */
+}
+
+.theadfontsize th {
+  font-size: 10px;
+  text-align: center;
+  color: #4a4a4a;
+  font-weight: 600;
+  padding: 15px;
+}
+.tabel_row td {
+  font-size: 10px;
+  cursor: pointer;
+  color: #4a4a4a;
+  font-weight: 600;
+  text-align: center;
+}
+.tabel_row td:hover {
+  color: #007bff;
+}
+.iconsRenderings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.icons {
+  width: 35px;
+}
+.borderr {
+  border-radius: 12px;
+  font-size: 12px;
+}
+.dotButtonIcons button {
+  width: 29px;
+  height: 40px;
+  padding: 6px 1px 6px 0px;
+  border-radius: 8px 8px 8px 8px;
+  border: none;
+  background-color: white;
+  border: 1px solid #c8cbcc99;
+  box-shadow: 0px 4px 42px 0px #00000040;
+}
+.documenttitle {
+  display: none;
+}
+/* Mobile styles for screens 760px and below */
+@media screen and (max-width: 760px) {
+  /* Make the table container scrollable horizontally */
+  .tableWrapper {
+    overflow-x: auto;
+
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for mobile */
+  }
+
+  /* Adjust table layout for mobile */
+  .tabel_row {
+    width: 100%; /* Ensures the table takes full width */
+    table-layout: auto; /* Allows columns to adjust based on content */
+  }
+
+  /* Adjust font size for mobile */
+  .theadfontsize th,
+  .tabel_row td {
+    font-size: 8px; /* Smaller font size for mobile */
+    padding: 5px; /* Less padding for mobile */
+    text-align: center;
+  }
+
+  /* Adjust icon sizes */
+  .icons {
+    width: 30px; /* Smaller icons */
+  }
+
+  /* Adjust button size and font */
+  .borderr {
+    font-size: 10px; /* Smaller button font */
+    padding: 5px 10px; /* Adjust padding to fit smaller buttons */
+  }
+
+  /* Dot button for mobile should still be easy to tap */
+  .dotButtonIcons button {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+  }
+
+  /* Adjust the button styles for mobile */
+  .myButton {
+    margin-top: 20px;
+    font-size: 10px; /* Smaller font size */
+    padding: 5px 10px; /* Adjust padding for smaller screens */
+
+    width: 100px; /* Adjust width for smaller devices */
+    margin-bottom: 5px; /* Add spacing between the buttons on smaller screens */
+  }
+  .documenttitle {
+    display: block;
+  }
+}

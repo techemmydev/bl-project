@@ -1,0 +1,72 @@
+.AjoBoxContainer {
+  max-width: 355px;
+
+  border: none;
+
+  background-color: #faf9f6;
+  border-radius: 21px;
+}
+
+.userstatusAccoubtype span {
+  display: block;
+  color: #666;
+  text-align: left;
+  margin-top: 5px;
+  font-size: 13px;
+}
+.AmountContainer h4 {
+  font-size: 20px;
+  color: black;
+}
+.AmountContainer small {
+  color: black;
+  font-size: 12px;
+  font-weight: 600;
+}
+.ajoicons {
+  width: 20px;
+}
+.AjoBox {
+  width: 100%;
+  /* background-color: chocolate; */
+  text-align: center;
+  /* text-align: center; */
+  border-radius: 10px;
+  padding: 20px;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+  overflow-x: auto;
+}
+/* .customCalendar {
+} */
+.AjoBox h5 {
+  /* text-align: center; */
+  color: #4a4a4a;
+  font-size: 14px;
+}
+.buttonContainer button {
+  border: none !important;
+  font-size: 12px;
+  font-weight: 500;
+}
+/* .customCalendar .react-calendar__tile--active {
+  background-color: green;
+  color: white;
+}
+
+.customCalendar .react-calendar__tile--disabled {
+  background-color: red;
+  color: white;
+} */
+/* .tileContent {
+  background-color: #4a4a4a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 12px;
+} */
+
+.tileContent span {
+  /* margin-top: 5px; */
+  font-weight: bold;
+}

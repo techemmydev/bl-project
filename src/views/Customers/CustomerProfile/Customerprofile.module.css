@@ -1,0 +1,185 @@
+.userIndicator {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 400px;
+  height: 121px;
+  border-radius: 12px;
+  border: 1px solid #e2e9e2;
+  z-index: 0;
+}
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 10px;
+}
+.user p {
+  margin-top: 10px;
+}
+.imageContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.icons {
+  margin-right: 8px; /* Adjust spacing between icon and name */
+}
+
+.container_details {
+  display: flex;
+  flex-direction: column;
+  /* background-color: orange; */
+  gap: 20px;
+}
+.inner_details {
+  width: 500px;
+  /* background-color: #4a4a4a; */
+  z-index: 0;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #e2e9e2;
+}
+.inner_details2 {
+  width: 450px;
+  height: 200px;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #e2e9e2;
+  z-index: 0;
+}
+.inner_details,
+.inner_details2,
+h1 {
+  font-size: 13px;
+  color: #4a4a4a;
+  font-weight: 600;
+}
+.details_flex {
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #999999;
+  margin-top: 20px;
+  /* background-color: aqua; */
+}
+
+.details_flex h5 {
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+.lastName {
+  text-align: right;
+}
+.container_details_Account {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 12px;
+  position: relative;
+  z-index: 0;
+  gap: 170px;
+  display: flex;
+  /* justify-content: space-evenly; */
+
+  border: 1px solid #e2e9e2;
+}
+.inner_details_Account {
+  width: 400px;
+  z-index: 0;
+  padding: 15px;
+  border-radius: 12px;
+}
+.inner_detailsAccount_chaart {
+  width: 400px;
+  height: 200px;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.image_position {
+  position: fixed;
+  left: 95%;
+  width: 100%;
+
+  z-index: 0; /* Sets a lower z-index to ensure it is behind other content */
+}
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.inner h1 {
+  font-size: 15px;
+  font-weight: 600;
+}
+.image_position img {
+  width: 100px;
+}
+.showhide {
+  display: none;
+}
+@media screen and (max-width: 760px) {
+  /* Stack containers vertically for mobile */
+  .container_details {
+    flex-direction: column;
+    gap: 10px; /* Reduce the gap for mobile */
+  }
+  .hide {
+    display: none;
+  }
+  .container_details_Account {
+    gap: unset;
+  }
+  .showhide {
+    display: block;
+    font-size: 12px;
+
+    font-weight: 600;
+    color: #4a4a4a;
+  }
+  .showhide h5 {
+    font-size: 12px;
+
+    font-weight: 600;
+    color: #4a4a4a;
+  }
+  .hideonmobile {
+    display: none;
+  }
+
+  /* Stack containers vertically for mobile */
+  .container_details {
+    flex-direction: column;
+    gap: 10px; /* Reduce the gap for mobile */
+  }
+
+  .inner_details,
+  .inner_details2,
+  .inner_details_Account {
+    width: 100%; /* Full width for mobile */
+  }
+
+  /* Adjust the user profile container for mobile */
+  .userIndicator {
+    margin-top: 90px;
+    width: 100%;
+    height: auto; /* Let height adjust based on content */
+  }
+
+  .details_flex {
+    width: 100%; /* Full width for mobile */
+
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .details_flex h5 {
+    margin-top: 5px;
+  }
+}

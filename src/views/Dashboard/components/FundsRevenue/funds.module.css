@@ -1,0 +1,23 @@
+@media screen and (max-width: 760px) {
+  .venue {
+    padding: 10px; /* Reduce padding for mobile */
+  }
+
+  .MuiCard-root {
+    width: 100% !important; /* Make the card width 100% on mobile */
+    height: 300px !important; /* Adjust card height for better fit */
+  }
+
+  .MuiTypography-root {
+    font-size: 10px !important; /* Reduce text size for mobile */
+  }
+
+  .MuiFormControlLabel-root .MuiTypography-root {
+    font-size: 10px !important; /* Reduce label font size */
+  }
+
+  .MuiRadio-root,
+  .MuiCheckbox-root {
+    padding: 4px !important; /* Reduce padding around radio buttons and checkboxes */
+  }
+}

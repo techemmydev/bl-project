@@ -1,0 +1,10 @@
+/* CSS Variables */
+:root {
+  --font-Family--: "Inter", sans-serif;
+  --Logins--background-color--: #92949c;
+  --Logins--default--Input-background--color: #ffffff80;
+  --Logins-buttons-background-color: #b4b4b4;
+  --button-text-color: #ffffff;
+  --lockscreen--background--: #effbef;
+  --cardButton--: var(--cardButton--);
+}

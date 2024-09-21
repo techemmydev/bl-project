@@ -1,0 +1,24 @@
+.genderCard {
+  background-color: #f8f9fa; /* Example background color */
+}
+.genderCard h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* .genderIcon {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+} */
+
+.percentage {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.genderCount {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}

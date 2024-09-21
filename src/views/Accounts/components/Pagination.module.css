@@ -1,0 +1,26 @@
+.pageLink_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pageLink_span {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.Pagination {
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 6px;
+}
+.pageLink {
+  color: #4a4a4a !important; /* Change the text color to red */
+  border: unset;
+}
+
+.pageLink:hover {
+  color: #4a4a4a !important; /* Change the text color to dark red on hover */
+}
+/* 
+.pageLink:focus {
+  box-shadow: none;  Remove the focus outline 
+} */

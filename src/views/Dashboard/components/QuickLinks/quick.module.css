@@ -1,0 +1,25 @@
+.card_container {
+  width: 314px;
+  height: 203px;
+  background-color: #f4f5f6;
+  border-radius: 8px;
+  border: 1px;
+  opacity: 0px;
+}
+.card_container h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.card_container p {
+  color: #5e605e;
+  font-weight: 600;
+}
+.card_container a {
+  text-decoration: none;
+  font-size: 11px;
+}
+@media screen and (max-width: 760px) {
+  .card_container {
+    width: 100%; /* Full width on mobile */
+  }
+}

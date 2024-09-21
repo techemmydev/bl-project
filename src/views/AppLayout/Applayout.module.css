@@ -1,0 +1,35 @@
+.main_container {
+  height: 100vh;
+  /* position: relative; */
+  background-color: white;
+}
+
+.content_container {
+  background-color: white;
+  flex-grow: 1;
+  margin-left: 255px; /* Adjust based on sidebar width */
+  padding-top: 50px; /* Adjust based on navbar height */
+}
+
+.page_content {
+  padding: 10px;
+  /* height: calc(100vh - 70px); */
+  /* background-color: brown; */
+  position: relative;
+}
+
+.settings_icon {
+  position: fixed;
+  bottom: 40%;
+  right: 0px;
+  z-index: 10;
+  width: 26px;
+}
+
+/* Adjust if necessary */
+@media screen and (max-width: 760px) {
+  .content_container {
+    margin-left: 0;
+    padding: unset;
+  }
+}

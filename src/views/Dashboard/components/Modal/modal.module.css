@@ -1,0 +1,59 @@
+.modal_button {
+  background-color: #53cafd;
+  width: 170px;
+  height: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  border: none !important;
+}
+.modal_box {
+  border: none;
+  width: 439px;
+  background-color: unset;
+}
+.formBox {
+  width: 400px;
+  background-color: #f3f3fc; /* White background */
+  border-radius: 40px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+.formBox label {
+  color: black;
+  font-size: 10px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.formBox input {
+  font-size: 11px;
+}
+.formBox input::placeholder {
+  font-size: 11px;
+}
+.ctabutton button:first-child {
+  width: 107px;
+  height: 40px;
+  font-size: 11px;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+}
+.ctabutton button:last-child {
+  width: 107px;
+  height: 40px;
+  font-size: 11px;
+  padding: 10px;
+  background-color: #5bd75b;
+  border-radius: 15px;
+  border: none;
+}
+@media screen and (max-width: 760px) {
+  .modal_button {
+    display: none;
+  }
+}

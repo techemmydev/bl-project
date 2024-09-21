@@ -1,0 +1,24 @@
+/* src/components/Transactions.module.css */
+
+.transactionCard {
+  background-color: #f8f9fa; /* Example background color */
+  border-radius: 10px;
+  padding: 10px;
+}
+.transactionCard h4 {
+  font-size: 14px;
+  color: #000;
+}
+
+.transactionItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+}
+.transactionItem span {
+  font-size: 12px;
+  color: #5e605e;
+}
+.transactionValue {
+  font-weight: bold;
+}

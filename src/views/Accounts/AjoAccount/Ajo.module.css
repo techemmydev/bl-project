@@ -1,0 +1,99 @@
+.myButton.isTrue {
+  border-bottom: 2px solid #007bff; /* Adjust color and thickness as needed */
+  color: #007bff;
+  font-weight: 600;
+}
+.isFalse {
+  color: #4a4a4a;
+  font-weight: 600;
+}
+.myButton {
+  border: unset;
+
+  background-color: unset;
+  font-size: 13px;
+}
+.theadfontsize th,
+.tabel_row td {
+  text-align: center; /* Center-aligns the text within table cells */
+  vertical-align: middle; /* Aligns content vertically in the middle */
+  padding: 10px; /* Adds consistent padding */
+}
+
+.theadfontsize th {
+  font-size: 10px;
+  text-align: center;
+  color: #4a4a4a;
+  font-weight: 600;
+  padding: 10px;
+}
+.tabel_row td {
+  font-size: 10px;
+  cursor: pointer;
+  color: #4a4a4a;
+  font-weight: 600;
+  text-align: center;
+}
+.tabel_row td:hover {
+  color: #007bff;
+}
+
+.borderr {
+  border-radius: 12px;
+  font-size: 12px;
+}
+.dotButtonIcons button {
+  width: 29px;
+  height: 40px;
+  padding: 6px 1px 6px 0px;
+  border-radius: 8px 8px 8px 8px;
+  border: none;
+  background-color: white;
+  border: 1px solid #c8cbcc99;
+  box-shadow: 0px 4px 42px 0px #00000040;
+}
+.Email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Media Query for mobile screens */
+@media (max-width: 768px) {
+  /* Hide the Add Staff button on mobile */
+  .AddnewButton {
+    display: none;
+  }
+  .AddnewButton_Mobile {
+    margin-bottom: 25px;
+  }
+  .icons {
+    display: none;
+  }
+  /* Make table responsive */
+  .stafftablecontainer {
+    margin-top: 100px;
+    overflow-x: auto; /* Allow horizontal scrolling on small screens */
+  }
+
+  /* Adjust table font size for mobile */
+  .theadfontsize th,
+  .tabel_row td {
+    font-size: 6px; /* Smaller font size for mobile */
+  }
+
+  /* Reduce padding for mobile */
+  .theadfontsize th,
+  .tabel_row td {
+    padding: 1px; /* Less padding on mobile for better fit */
+  }
+
+  /* Ensure table cells wrap properly */
+  .tabel_row td {
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds ellipsis for text overflow */
+  }
+  .hideonmobile {
+    display: block;
+  }
+}
