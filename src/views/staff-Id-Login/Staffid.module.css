@@ -1,8 +1,9 @@
 .staffIdContainer {
   background-color: var(--Logins--background-color--);
   display: flex;
-  justify-content: center;
-  height: 100vh;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Take full height of the viewport */
   position: relative;
 }
 
@@ -13,6 +14,7 @@
   justify-content: center;
   position: relative;
 }
+
 .textOverlay {
   top: 200px;
   position: absolute;
@@ -22,16 +24,19 @@
   align-items: center;
   flex-direction: column;
 }
+
 .piggyLogoContainer {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
+
 .piggyLogoImage {
   width: 150px;
   margin-bottom: 3px;
 }
+
 .piggyLogoContainer h1 {
   font-family: var(--font-Family--);
   font-weight: 700;
@@ -39,6 +44,7 @@
   font-size: 30px;
   text-align: center;
 }
+
 .piggyLogoContainer p {
   font-family: var(--font-Family--);
   font-weight: 500;
@@ -46,6 +52,7 @@
   font-size: 12px;
   text-align: center;
 }
+
 .formLabel {
   color: black;
   font-weight: var(--font-Family--);
@@ -53,17 +60,19 @@
   font-weight: 500;
   margin-bottom: 8px;
 }
+
 .flexingInputContainer {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* gap: 10px; */
 }
+
 .inputWidth {
   width: 400px;
   background-color: var(--Logins--default--Input-background--color);
   font-family: var(--font-Family--);
 }
+
 .inputWidth::-webkit-outer-spin-button,
 .inputWidth::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -79,6 +88,7 @@
   font-size: 12px;
   font-family: var(--font-Family--);
 }
+
 .submitButton {
   width: 400px;
   background-color: var(--Logins-buttons-background-color);
@@ -88,23 +98,28 @@
   font-size: 12px;
   margin-top: 20px;
 }
+
 .submitButton:hover {
   background-color: var(--Logins-buttons-background-color);
 }
+
 .imageLine {
   margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .piggylines_img {
   width: 188.2px;
   height: 9.78px;
 }
+
 .copyRight {
   position: absolute;
   top: 550px;
 }
+
 .copyRight p {
   font-family: var(--font-Family--);
   color: white;
@@ -119,8 +134,22 @@
   .submitButton {
     width: 300px;
   }
+
   .staffIdContainer {
-    align-items: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height to allow centering */
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .innerBoxStaffId {
+    width: 90%; /* Reduce width for mobile view */
     height: unset;
+  }
+
+  .copyRight {
+    top: unset; /* Let copyRight move naturally with the content */
+    position: relative;
+    margin-top: 20px; /* Adjust spacing */
   }
 }
