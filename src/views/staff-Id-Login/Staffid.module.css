@@ -122,5 +122,6 @@
   }
   .staffIdContainer {
     align-items: center;
+    height: unset;
   }
 }
