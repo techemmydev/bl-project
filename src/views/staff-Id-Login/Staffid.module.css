@@ -119,4 +119,13 @@
   .submitButton {
     width: 300px;
   }
+  .staffIdContainer {
+    align-items: center;
+  }
+  .flexingInputContainer {
+    gap: 10px;
+  }
+  .copyRight {
+    top: 640px;
+  }
 }
