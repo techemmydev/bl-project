@@ -114,9 +114,13 @@
   line-height: 12px;
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 760px) {
   .inputWidth,
   .submitButton {
     width: 300px;
+    background-color: aqua;
+  }
+  .staffIdContainer {
+    align-items: center;
   }
 }
