@@ -137,4 +137,7 @@
   .piggyLogoContainer p {
     font-size: 15px;
   }
+  .textOverlay {
+    top: 300px;
+  }
 }
