@@ -124,12 +124,12 @@
   .textOverlay {
     padding: unset;
   }
-  .staffIdContainer {
+  /* .staffIdContainer {
     height: 96vh;
-  }
-  .staffIdImage {
+  } */
+  /* .staffIdImage {
     height: 80vh;
-  }
+  } */
   .piggyLogoContainer h1 {
     font-size: 40px;
   }
