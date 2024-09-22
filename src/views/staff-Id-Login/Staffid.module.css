@@ -129,7 +129,7 @@
     font-size: 45px;
   }
   .piggyLogoContainer p {
-    font-size: 20px;
+    font-size: 19px;
   }
   .textOverlay {
     top: 85%; /* Adjust top position to center the form */
@@ -139,10 +139,13 @@
     /* gap: 10px; */
   }
   .copyRight {
-    top: 630px;
+    top: 640px;
   }
   .formLabel {
     font-size: 18px;
     font-weight: 600;
+  }
+  .inputWidth::placeholder {
+    font-size: 15px;
   }
 }
