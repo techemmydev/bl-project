@@ -2,6 +2,7 @@
   background-color: var(--Logins--background-color--);
   display: flex;
   justify-content: center;
+  align-items: center; /* Center content vertically */
   height: 100vh;
   position: relative;
 }
@@ -13,6 +14,7 @@
   justify-content: center;
   position: relative;
 }
+
 .textOverlay {
   top: 200px;
   position: absolute;
@@ -22,16 +24,19 @@
   align-items: center;
   flex-direction: column;
 }
+
 .piggyLogoContainer {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
+
 .piggyLogoImage {
   width: 150px;
   margin-bottom: 3px;
 }
+
 .piggyLogoContainer h1 {
   font-family: var(--font-Family--);
   font-weight: 700;
@@ -39,6 +44,7 @@
   font-size: 30px;
   text-align: center;
 }
+
 .piggyLogoContainer p {
   font-family: var(--font-Family--);
   font-weight: 500;
@@ -46,6 +52,7 @@
   font-size: 12px;
   text-align: center;
 }
+
 .formLabel {
   color: black;
   font-weight: var(--font-Family--);
@@ -53,17 +60,19 @@
   font-weight: 500;
   margin-bottom: 8px;
 }
+
 .flexingInputContainer {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* gap: 10px; */
 }
+
 .inputWidth {
   width: 400px;
   background-color: var(--Logins--default--Input-background--color);
   font-family: var(--font-Family--);
 }
+
 .inputWidth::-webkit-outer-spin-button,
 .inputWidth::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -79,6 +88,7 @@
   font-size: 12px;
   font-family: var(--font-Family--);
 }
+
 .submitButton {
   width: 400px;
   background-color: var(--Logins-buttons-background-color);
@@ -88,44 +98,79 @@
   font-size: 12px;
   margin-top: 20px;
 }
+
 .submitButton:hover {
   background-color: var(--Logins-buttons-background-color);
 }
+
 .imageLine {
   margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .piggylines_img {
   width: 188.2px;
   height: 9.78px;
 }
+
 .copyRight {
   position: absolute;
   top: 550px;
 }
+
 .copyRight p {
   font-family: var(--font-Family--);
   color: white;
-  font-family: Inter;
   font-size: 13px;
   font-weight: 500;
   line-height: 12px;
 }
 
+/* Media Queries for Mobile Responsiveness */
 @media screen and (max-width: 760px) {
+  .innerBoxStaffId {
+    height: auto;
+  }
+
+  .textOverlay {
+    top: 50%; /* Adjust top position to center the form */
+    transform: translateY(-50%); /* Center vertically */
+    padding: 0 20px; /* Add some padding for better spacing */
+  }
+
+  .piggyLogoImage {
+    width: 100px; /* Resize the logo for smaller screens */
+  }
+
+  .piggyLogoContainer h1 {
+    font-size: 24px; /* Reduce the heading size */
+  }
+
+  .piggyLogoContainer p {
+    font-size: 10px; /* Smaller text for mobile */
+  }
+
   .inputWidth,
   .submitButton {
-    width: 300px;
+    width: 100%; /* Full width inputs and buttons */
   }
-  .staffIdContainer {
-    align-items: center;
+
+  .imageLine {
+    margin-top: 20px; /* Adjust margin for mobile */
   }
-  .flexingInputContainer {
-    gap: 10px;
+
+  .piggylines_img {
+    width: 150px; /* Reduce the width of the image */
   }
+
   .copyRight {
-    top: 640px;
+    top: auto;
+    bottom: 20px; /* Adjust copyRight position for mobile screens */
+  }
+
+  .copyRight p {
+    font-size: 12px;
   }
 }
