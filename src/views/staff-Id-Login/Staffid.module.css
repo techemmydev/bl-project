@@ -118,6 +118,7 @@
   .inputWidth,
   .submitButton {
     width: 350px;
+    height: 60px;
   }
 
   .textOverlay {
@@ -125,5 +126,15 @@
   }
   .staffIdContainer {
     height: 99vh;
+  }
+  .staffIdImage {
+    width: 100%;
+    height: 100vh;
+  }
+  .piggyLogoContainer h1 {
+    font-size: 40px;
+  }
+  .piggyLogoContainer p {
+    font-size: 15px;
   }
 }
