@@ -119,7 +119,12 @@
   .submitButton {
     width: 350px;
   }
+
+  .textOverlay {
+    padding: unset;
+  }
   .staffIdContainer {
+    background-color: black;
     align-items: center;
   }
 }
