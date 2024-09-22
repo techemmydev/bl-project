@@ -137,7 +137,13 @@
     font-size: 15px;
   }
   .textOverlay {
-    top: 80%; /* Adjust top position to center the form */
+    top: 85%; /* Adjust top position to center the form */
     transform: translateY(-50%); /* Center vertically */
+  }
+  .flexingInputContainer {
+    /* gap: 10px; */
+  }
+  .copyRight {
+    top: 630px;
   }
 }
