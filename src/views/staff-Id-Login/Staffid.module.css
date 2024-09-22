@@ -124,7 +124,6 @@
     padding: unset;
   }
   .staffIdContainer {
-    background-color: black;
-    align-items: center;
+    height: 100vh;
   }
 }
