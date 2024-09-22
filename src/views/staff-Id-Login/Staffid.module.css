@@ -117,6 +117,9 @@
 @media screen and (max-width: 760px) {
   .inputWidth,
   .submitButton {
-    width: 300px;
+    width: 350px;
+  }
+  .staffIdContainer {
+    align-items: center;
   }
 }
