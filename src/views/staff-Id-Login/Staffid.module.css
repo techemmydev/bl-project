@@ -117,24 +117,19 @@
 @media screen and (max-width: 760px) {
   .inputWidth,
   .submitButton {
-    width: 350px;
+    width: 355px;
     height: 60px;
   }
 
   .textOverlay {
     padding: unset;
   }
-  /* .staffIdContainer {
-    height: 96vh;
-  } */
-  /* .staffIdImage {
-    height: 80vh;
-  } */
+
   .piggyLogoContainer h1 {
-    font-size: 40px;
+    font-size: 45px;
   }
   .piggyLogoContainer p {
-    font-size: 15px;
+    font-size: 20px;
   }
   .textOverlay {
     top: 85%; /* Adjust top position to center the form */
@@ -145,5 +140,9 @@
   }
   .copyRight {
     top: 630px;
+  }
+  .formLabel {
+    font-size: 18px;
+    font-weight: 600;
   }
 }
