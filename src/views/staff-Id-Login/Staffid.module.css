@@ -125,12 +125,11 @@
     padding: unset;
   }
   .staffIdContainer {
-    height: 99vh;
+    height: 96vh;
   }
-  /* .staffIdImage {
-    width: 100%;
-    height: 100vh;
-  } */
+  .staffIdImage {
+    height: 50vh;
+  }
   .piggyLogoContainer h1 {
     font-size: 40px;
   }
