@@ -49,6 +49,10 @@
 .AddnewButton:hover {
   background-color: #03b1fc;
 }
+
+.documenttitle {
+  display: none;
+}
 /* Media Query for mobile screens (max-width: 768px) */
 @media (max-width: 768px) {
   /* Ensure the container can scroll horizontally if needed */
