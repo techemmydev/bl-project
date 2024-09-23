@@ -117,7 +117,7 @@
 @media screen and (max-width: 760px) {
   .inputWidth,
   .submitButton {
-    width: 355px;
+    width: 350px;
     height: 60px;
   }
 
